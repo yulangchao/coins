@@ -1,0 +1,38 @@
+
+<div style="margin: auto; max-width: 1000px; margin-bottom: 50px;">
+    <data-table id="persons-grid"
+        headerTitle="Coin Info"
+        [items]="items"
+        [itemCount]="itemCount"
+        (reload)="reloadItems($event)"
+
+        (rowClick)="rowClick($event)"
+        (rowDoubleClick)="rowDoubleClick($event)"
+        >
+        <data-table-column
+            [property]="'MarketName'"
+            [header]="'市场'"
+            [sortable]="true"
+            [resizable]="true">
+        </data-table-column>
+        <data-table-column
+            [property]="'Ask'"
+            [header]="'最新价'"
+            [sortable]="true">
+        </data-table-column>
+        <data-table-column
+            [property]="'High'"
+            [header]="'24h最高价'">
+        </data-table-column>
+        <data-table-column
+            [property]="'Low'"
+            [header]="'24h最低价'"
+            [width]="100"
+            [resizable]="true">
+        </data-table-column>
+        <data-table-column
+            [property]="'Volume'"
+            [header]="'24h成交量'">
+        </data-table-column>
+    </data-table>
+</div>

@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row bottom-margin-1x">
+        <div class="col-xs-6 col-sm-4 col-md-4">
+            <h1 class="text-large">
+                <img [src]="img" class="currency-logo-32x32" alt="Advanced Internet Blocks">
+                <span class="clearfix visible-xs"></span>
+                {{id}}
+            </h1>
+        </div>
+        <div class="col-xs-6 col-sm-8 col-md-4 text-left">
+
+            
+                <h4 id="quote_price" data-currency-price="" data-usd="0.0148753">
+                    <span class="text-large2" data-currency-value="">Price:  {{price}} BTC </span>
+                    <span class="details-text-medium" [ngStyle]="{'color': (float<0 ? 'red': 'green')}" data-currency-code="">({{float}}%)</span>
+                </h4>
+                <h4 id="quote_price" data-currency-price="" data-usd="0.0148753">
+                    <span class="text-large2" data-currency-value="">Volume:  {{volume}} {{id.split("-")[0]}} </span>
+                    <span class="details-text-medium" data-currency-code="">(24hr)</span>
+                </h4>
+                
+                
+            
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 hidden-md hidden-lg text-left">
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hidden-xs hidden-sm col-md-4 text-left">
+            
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="container" [chart]="chart"></div>
