@@ -82,8 +82,7 @@ export class ChartComponent implements OnInit {
               },
               xAxis: {
                 type: 'datetime',
-                min: 1517196502039 - 18 * 60 * 60 * 1000,
-                max: 1517196502039 - 16 * 60 * 60 * 1000,
+                min: new Date().getTime() - 1 * 60 * 60 * 1000,
               },
               yAxis: [{ // Primary yAxis
                 labels: {
